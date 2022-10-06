@@ -28,6 +28,7 @@ public class TransactionsTermSavingsTest extends BaseControllerTest {
                 .statusCode(200)
                 .log().body()
                 .body("message", equalTo(null));
+
     }
 
     @Test

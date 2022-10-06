@@ -46,5 +46,5 @@ public class TransactionsTermSavingsData {
     public void setUpdatedAt(String updatedAt) {
         this.updatedAt = updatedAt;
     }
-
+    
 }

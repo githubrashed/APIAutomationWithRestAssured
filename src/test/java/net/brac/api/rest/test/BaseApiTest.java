@@ -15,4 +15,5 @@ public abstract class BaseApiTest {
         RestAssured.baseURI = "Application URL";
         RestAssured.basePath = "/" + getControllerName();
     }
+
 }

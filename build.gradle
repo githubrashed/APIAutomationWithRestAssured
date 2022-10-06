@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+sourceCompatibility = 1.8
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'org.testng:testng:7.3.0'
+    testCompile 'io.rest-assured:rest-assured:4.3.1'
+    testCompile 'org.json:json:20210307'
+    testCompile 'org.json:json:20210307'
+    testCompile 'com.google.code.gson:gson:2.8.6'
+    testCompile 'io.rest-assured:xml-path:4.3.1'
+    testCompile 'com.fasterxml.jackson.core:jackson-databind:2.11.3'
+
+}
+
+test {
+    useTestNG()
+}

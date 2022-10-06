@@ -12,7 +12,7 @@ public abstract class BaseApiTest {
     @BeforeClass
     protected void setup() {
         //QA Instance URL
-        RestAssured.baseURI = "Application URL";
+        RestAssured.baseURI = "http://10.42.53.130:7099";
         RestAssured.basePath = "/" + getControllerName();
     }
 

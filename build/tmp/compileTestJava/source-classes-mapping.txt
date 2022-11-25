@@ -1,0 +1,8 @@
+net/brac/api/rest/test/BaseApiTest.java
+ net.brac.api.rest.test.BaseApiTest
+net/brac/api/rest/test/scapir/BaseControllerTest.java
+ net.brac.api.rest.test.scapir.BaseControllerTest
+net/brac/api/rest/test/scapir/get/pojo/TransactionsTermSavingsData.java
+ net.brac.api.rest.test.scapir.get.pojo.TransactionsTermSavingsData
+net/brac/api/rest/test/scapir/get/TransactionsTermSavingsTest.java
+ net.brac.api.rest.test.scapir.get.TransactionsTermSavingsTest

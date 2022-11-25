@@ -23,12 +23,11 @@ public class TransactionsTermSavingsTest extends BaseControllerTest {
         given()
                 .log().uri()
                 .when()
-                .get("ApplicationUrl/ControllerName/API?/TransactionsTermSavings?&UpdatedAt={updatedAt}&key={key}&OrgNo={orgNo}&StartDate={startDate}&EndDate={endDate}", updatedAt, key, orgNo, startDate, endDate)
+                .get("/TransactionsTermSavings?&UpdatedAt={updatedAt}&key={key}&OrgNo={orgNo}&StartDate={startDate}&EndDate={endDate}", updatedAt, key, orgNo, startDate, endDate)
                 .then()
                 .statusCode(200)
                 .log().body()
                 .body("message", equalTo(null));
-
     }
 
     @Test
@@ -49,7 +48,7 @@ public class TransactionsTermSavingsTest extends BaseControllerTest {
                 .statusCode(200)
                 .log().body()
                 .body("message", equalTo(null))
-                .extract().body().jsonPath().getList("transactionsTermSavingsDataList", TransactionsTermSavingsData.class);
+                .extract().body().jsonPath().getList("data", TransactionsTermSavingsData.class);
 
         for (TransactionsTermSavingsData data : transactionsTermSavingsDataList) {
             Assert.assertEquals(data.getProjectCode(), 015);

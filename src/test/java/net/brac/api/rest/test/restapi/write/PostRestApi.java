@@ -2,7 +2,6 @@ package net.brac.api.rest.test.restapi.write;
 
 import static io.restassured.RestAssured.given;
 
-
 import org.testng.annotations.Test;
 
 public class PostRestApi {

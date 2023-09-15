@@ -10,7 +10,6 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class ReadWriteApi {
 
-
     @Test
     public void getUserDetailsInformation() {
 
